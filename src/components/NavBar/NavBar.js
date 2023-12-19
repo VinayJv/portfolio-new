@@ -15,7 +15,7 @@ export function NavBar() {
         <nav>
             <ul>
                 <div>
-                    <img src="./images/logo.png" alt="logo"></img>
+                    <img src="./images/logo2.png" alt="logo" style={{width: "60px", height: "60px"}}></img>
                 </div>
                 <div className="hide-from-mobile">
                     <li>Home</li>
@@ -24,7 +24,7 @@ export function NavBar() {
                     <li>Contact</li>
                     <p>icons</p>
                 </div>
-                {showNav ? <AiOutlineClose size={40} color="white" style={{ cursor: "pointer" }} onClick={handleNav}/> : <GiHamburgerMenu size={40} color="white" style={{ cursor: "pointer" }} className="only-mobile" onClick={handleNav} />
+                {showNav ? <AiOutlineClose size={35} color="white" style={{ cursor: "pointer" }} onClick={handleNav}/> : <GiHamburgerMenu size={35} color="white" style={{ cursor: "pointer" }} className="only-mobile" onClick={handleNav} />
                 }
             </ul>
             <div className={showNav ? "mobile-nav-show" : "mobile-nav-hide"}>

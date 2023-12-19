@@ -1,4 +1,4 @@
-/* 2c2c33, ae5029 */
+/* #2c2c33, #ae5029, #282831, #5D87B4 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
@@ -6,6 +6,9 @@
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
+}
+body{
+  color: white;
 }
 .only-mobile{
   display: none;
@@ -21,4 +24,7 @@
   .hide-from-mobile{
     display: none;
   }
+}
+@media only screen and (min-width: 1400px) {
+  
 }
