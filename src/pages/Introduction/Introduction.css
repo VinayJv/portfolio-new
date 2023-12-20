@@ -53,6 +53,21 @@ span{
     left: -14px;
     color: #5D87B4;
 }
+.contact-btn{
+    cursor: pointer;
+    padding: 5px;
+    margin: 14px 0px;
+    background-color: #2c2c33;
+    border: 2px solid #5D87B4;
+    border-radius: 2px;
+    color: #5D87B4;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.contact-btn:hover{
+    color: #2c2c33;
+    background-color: #5D87B4;
+}
 
 @media only screen and (max-width: 600px) {
     .introduction-container {
@@ -67,8 +82,12 @@ span{
     .introduction-mobile{
         display: flex;
         flex-direction: column;
-        padding: 5rem;
+        padding: 3rem 1rem;
         background-color: #333238;
+        text-align: center;
+    }
+    .introduction-header-highlight-mobile{
+        margin-bottom: 12px;
     }
 }
 @media only screen and (max-width: 1200px) and (min-width: 600px) {
