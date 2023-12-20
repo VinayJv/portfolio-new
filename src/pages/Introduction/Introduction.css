@@ -59,6 +59,17 @@ span{
         gap: 1rem;
     }
     .name-text{
-        font-size: 52px;
+        font-size: 48px;
+    }
+    .introduction-container-child{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .introduction-container {
+        gap: 2rem;
+    }
+    .introduction-container-child{
+        width: 30%;
     }
 }
