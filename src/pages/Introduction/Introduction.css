@@ -64,6 +64,12 @@ span{
     .introduction-container-child{
         width: 40%;
     }
+    .introduction-mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        background-color: #333238;
+    }
 }
 @media only screen and (max-width: 1200px) and (min-width: 600px) {
     .introduction-container {
