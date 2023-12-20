@@ -1,6 +1,6 @@
 .introduction-container{
     display: flex;
-    height: 40svh;
+    height: 60svh;
     align-items: center;
     justify-content: center;
     gap: 4rem;
@@ -22,13 +22,16 @@
     flex-direction: column;
     width: 300px;
 }
-.introduction-container-child{
-    height: 100%;
+
+.image-container{
+    align-self: last baseline;
+    height: 80%;
 }
+
 .image-container > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .margin-set {
     margin-top: -14px;
@@ -71,13 +74,19 @@ span{
 
 @media only screen and (max-width: 600px) {
     .introduction-container {
+        height: 60svh;
         gap: 1rem;
+        padding: 5rem 2rem 0rem 2rem;
+    }
+    .image-container{
+        align-self: last baseline;
+    }
+    .image-container > img {
+        object-fit: cover;
     }
     .name-text{
+        white-space: nowrap;
         font-size: 48px;
-    }
-    .introduction-container-child{
-        width: 40%;
     }
     .introduction-mobile{
         display: flex;
