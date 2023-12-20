@@ -16,6 +16,9 @@ body{
 .hide-from-mobile{
   display: flex;
 }
+.App{
+  position: relative;
+}
 
 @media only screen and (max-width: 600px) {
   .only-mobile{
@@ -26,5 +29,4 @@ body{
   }
 }
 @media only screen and (min-width: 1400px) {
-  
 }

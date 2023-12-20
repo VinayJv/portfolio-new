@@ -27,7 +27,7 @@ export function NavBar() {
                 {showNav ? <AiOutlineClose size={35} color="white" style={{ cursor: "pointer" }} onClick={handleNav}/> : <GiHamburgerMenu size={35} color="white" style={{ cursor: "pointer" }} className="only-mobile" onClick={handleNav} />
                 }
             </ul>
-            <div className={showNav ? "mobile-nav-show" : "mobile-nav-hide"}>
+            <div className={`only-mobile mobile-nav ${showNav ? "mobile-nav-show" : "mobile-nav-hide"}`}>
                 <li>Home</li>
                 <li>Portfolio</li>
                 <li>Blog</li>
