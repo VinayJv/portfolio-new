@@ -23,7 +23,7 @@ nav {
     position: absolute;
     width: 100%;
     top: 0;
-    height: 100svh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     animation-duration: 1s;
