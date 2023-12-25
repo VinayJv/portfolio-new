@@ -5,6 +5,11 @@ nav {
     top: 0;
     z-index: 1;
 }
+.nav-links{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
 .header-ul {
     display: flex;
     justify-content: space-between;

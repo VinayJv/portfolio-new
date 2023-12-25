@@ -5,7 +5,7 @@
     justify-content: center;
     margin: 0 auto;
     padding: 3rem 1rem;
-    background-color: #282831;
+    background-color: rgba(40, 40, 49, 0.616);
 }
 .services-inner-container-intro{
     display: flex;

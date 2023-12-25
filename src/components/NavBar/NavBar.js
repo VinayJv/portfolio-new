@@ -1,13 +1,13 @@
 import "./NavBar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 
 export function NavBar() {
     const [animationClass, setAnimationClass] = useState("slide-from-top");
     const [toggleClass, setToggleClass] = useState(true);
     const [showNav, setShowNav] = useState(false);
+    const navigate = useNavigate();
 
     const handleNav = () => {
         setShowNav(true);
@@ -20,6 +20,14 @@ export function NavBar() {
             setAnimationClass("slide-from-top");
             setToggleClass(true);
         }, 900);
+    }
+    const handleNavRouting = (event) => {
+        if(event.target.id === "About"){
+            navigate("/");
+        } else if(event.target.id === "Portfolio"){
+            navigate("/portfolio");
+        }
+        setShowNav(false);
     }
 
     return (
@@ -41,7 +49,7 @@ export function NavBar() {
                     </div>
                 </ul>
                 <div className="nav-options-container">
-                    {["Home", "Portfolio", "Contacts", "Icons"].map((item,index)=><p className={toggleClass ? "nav-open-animation" : "nav-close-animation"} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
+                    {["About", "Portfolio", "Connect"].map((item,index)=><p id={item} onClick={handleNavRouting} className={`${toggleClass ? "nav-open-animation" : "nav-close-animation"} nav-links`} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
                 </div>
             </div>
         </nav>

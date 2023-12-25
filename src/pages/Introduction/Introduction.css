@@ -1,12 +1,12 @@
 .introduction-container{
     display: flex;
-    height: 80svh;
+    height: 80vh;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
     padding-top: 5rem;
+    gap: 2rem;
 }
 .sm-text{
     font-size: 14px;
@@ -15,9 +15,9 @@
 .introduction-sm-text {
     font-size: 14px;    
     line-height: 22px;
-    max-width: 600px;
-    text-align: center;
-    align-self: center;
+    max-width: 250px;
+    text-align: left;
+    align-self: left;
     margin-top: 1rem;
 }
 .bar{
@@ -34,20 +34,11 @@
 .introduction-text {
     opacity: 0;
     flex-direction: column;
-    width: 300px;
     animation: fade-in 1s ease forwards;
-}
-.introduction-mobile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0rem;
-    background-color: #333238;
 }
 .image-container{
     align-self: last baseline;
-    height: 90%;
+    height: 100%;
 }
 
 .image-container > img {
@@ -113,6 +104,7 @@
     .introduction-mobile{
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 3rem 1rem;
         background-color: #333238;
         text-align: center;
@@ -121,6 +113,7 @@
         margin-bottom: 10px;
     }
     .introduction-sm-text {
+        max-width: 500px;
         text-align: center;
         margin-top: 1rem;  
     }
