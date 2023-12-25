@@ -10,7 +10,7 @@ nav {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    animation: fade-in 1s ease-out forwards;
+    animation: fade-in 1s ease forwards;
 }
 .nav-ul {
     display: flex;
@@ -149,6 +149,7 @@ nav {
     .nav-options-container{
         padding-top: 6rem;
         padding-left: 1rem;
+        font-size: 34px;
     }
 }
 /* @media only screen and (max-width: 1200px) and (min-width: 600px) {

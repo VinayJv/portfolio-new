@@ -10,10 +10,13 @@ import { SiExpress } from "react-icons/si";
 import { TbBrandMongodb } from "react-icons/tb";
 
 export function Services() {
-    return (<div className="services-container">
-        <p className="introduction-header-highlight">SERVICES</p>
-        <p className="lg-text">What I Am Great At</p>
-        <p className="introduction-sm-text sm-text-additional">Skilled in MERN (MongoDB, Express.js, React, Node.js) stack, I develop scalable web applications. Proficient in MongoDB for database management, React for dynamic UIs, and Express.js/Node.js for seamless server-side logic.</p>
+    return (
+    <div className="services-container">
+        <div className="services-inner-container-intro">
+            <p className="introduction-header-highlight">SERVICES</p>
+            <p className="lg-text">What I Am Great At</p>
+            <p className="sm-text-additional">Skilled in MERN (MongoDB, Express.js, React, Node.js) stack, I develop scalable web applications. Proficient in MongoDB for database management, React for dynamic UIs, and Express.js/Node.js for seamless server-side logic.</p>
+        </div>
         <div className="services-inner-container">
             <div className="skill-bg"><FaHtml5 className="services-icon"/><p>HTML</p></div>
             <div className="skill-bg"><FaCss3Alt className="services-icon"/><p>CSS</p></div>
