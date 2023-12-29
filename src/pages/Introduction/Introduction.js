@@ -1,4 +1,5 @@
 import "./Introduction.css";
+import background from "./Ellipse.png";
 
 export function Introduction() {
     return (
@@ -15,7 +16,8 @@ export function Introduction() {
                     <button className="contact-btn">CONTACT ME</button>
                 </div>
                 <div className="image-container">
-                    <img src="./images/main.png" alt=""></img>
+                    <div className="bg-circle" style={{ backgroundImage: `url(${background})`}}></div>
+                    <img src="./images/Photo.png" alt="" className="intro-img"></img>
                 </div>
                 <div className="introduction-text hide-from-mobile">
                     <p className="introduction-header-highlight">INTRODUCTION</p>

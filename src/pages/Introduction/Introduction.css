@@ -1,12 +1,11 @@
 .introduction-container{
     display: flex;
-    height: 80vh;
+    height: 94svh;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
-    gap: 2rem;
+    gap: 4rem;
 }
 .sm-text{
     font-size: 14px;
@@ -35,16 +34,25 @@
     opacity: 0;
     flex-direction: column;
     animation: fade-in 1s ease forwards;
+    margin-left: 1rem;
 }
-.image-container{
-    align-self: last baseline;
-    height: 100%;
+.image-container {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 450px;
+    background-color: #BCEBE2;
+    aspect-ratio: 1;
+    opacity: 0;
+    animation: image-animation-bg 1s ease forwards;
 }
-
-.image-container > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.intro-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: image-animation 1s ease forwards 200ms;
 }
 .margin-set {
     margin-top: -14px;
@@ -80,26 +88,34 @@
     font-weight: bold;
     letter-spacing: 1px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.500);
+    text-shadow: none;
 }
 .contact-btn:hover{
     color: #2c2c33;
     background-color: #5D87B4;
 }
 
+@keyframes image-animation{
+    to{
+        top: 20%;
+        opacity: 1;
+    }
+}
+@keyframes image-animation-bg{
+    to {
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .introduction-container {
-        height: 60svh;
-        padding: 5rem 2rem 0rem 2rem;
-    }
-    .image-container{
-        align-self: last baseline;
-    }
-    .image-container > img {
-        object-fit: cover;
+        height: 70svh;
+        padding: 0rem 1rem;
+        gap: 0rem;
     }
     .name-text{
         white-space: nowrap;
-        font-size: 48px;
+        font-size: 42px;
     }
     .introduction-mobile{
         display: flex;
