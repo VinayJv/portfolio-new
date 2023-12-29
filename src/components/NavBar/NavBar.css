@@ -145,9 +145,6 @@ nav {
 
 
 @media only screen and (max-width: 600px) {
-    nav > ul{
-        padding: 5px;
-    }
     .nav-options-container{
         padding-top: 6rem;
         padding-left: 1rem;
