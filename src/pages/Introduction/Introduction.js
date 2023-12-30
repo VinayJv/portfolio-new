@@ -12,7 +12,7 @@ export function Introduction() {
                     </div>
                     <div className="bar"></div>
                     <p className="sm-text">LinkedIn | Instagram</p>
-                    <p className="sm-text">GitHub | Behance</p>
+                    <p className="sm-text hide-from-mobile">GitHub | Behance</p>
                     <button className="contact-btn">CONTACT ME</button>
                 </div>
                 <div className="image-container">

@@ -33,7 +33,7 @@ export function NavBar() {
     return (
         <nav>
             <ul className="header-ul">
-                <img src="./images/logo2.png" alt="logo" style={{ width: "60px", height: "60px" }}></img>
+                <p className="logo">VJ<span className="logo-dot">.</span></p>
                 <div className="hamburger-menu" onClick={handleNav}>
                     <div className="hambar top"></div>
                     <div className="hambar centre"></div>
@@ -42,7 +42,7 @@ export function NavBar() {
             </ul>
             <div className={`nav-menu`} style={{ animationName: animationClass, display: showNav ? "flex" : "none" }}>
                 <ul className="nav-ul">
-                    <img src="./images/logo2.png" alt="logo" style={{ width: "60px", height: "60px" }}></img>
+                <p className="logo">VJ<span className="logo-dot">.</span></p>
                     <div className={`close-menu ${toggleClass ? "nav-open-animation" : "nav-close-animation"}`} onClick={handleNavClose}>
                         <div className="closebar one"></div>
                         <div className="closebar two"></div>

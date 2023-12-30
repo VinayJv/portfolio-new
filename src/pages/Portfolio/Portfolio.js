@@ -1,16 +1,45 @@
+import { Services } from "../Services/Services";
 import "./Portfolio.css";
 
-export function Portfolio(){
-    return (<div className="portfolio-container bg-color">
-        <p className="introduction-header-highlight">PORTFOLIO</p>
-        <p className="lg-text">My Master Collection</p>
-        <p className="introduction-sm-text text-container">Explore my portfolio to discover a range of web development projects, from dynamic e-commerce platforms to interactive social media applications, each project demonstrates my proficiency in responsive design, efficient back-end functionality, and intuitive front-end interfaces.</p>
-        <div className="portfolio-container">
-            <ul>
-                <li>All</li>
-                <li>FRONT-END</li>
-                <li>BACK-END</li>
-            </ul>
-        </div>
-    </div>);
+export function Portfolio() {
+    return (
+        <div>
+            <Services />
+            <div className="portfolio-container bg-color">
+                <p className="introduction-header-highlight">CREATIONS</p>
+                <p className="lg-text" style={{ marginBottom: "2rem" }}>My Master Collection</p>
+                <div className="projects-container">
+                    <div className="project-cards">
+                        <div className="floating-project-info">
+                            <p className="project-title">Utter</p>
+                            <p className="project-info">An social media website for people.</p>
+                            <div className="project-links-container">
+                                <a target="_blank" href="">Live Code</a>
+                                <a target="_blank" href="">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-cards">
+                        <div className="floating-project-info">
+                            <p className="project-title">RGB Peripherals</p>
+                            <p className="project-info">An e-commerce website.</p>
+                            <div className="project-links-container">
+                                <a target="_blank" href="">Live Code</a>
+                                <a target="_blank" href="">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-cards">
+                        <div className="floating-project-info">
+                            <p className="project-title">MeetUp</p>
+                            <p className="project-info">An event manager.</p>
+                            <div className="project-links-container">
+                                <a target="_blank" href="">Live Code</a>
+                                <a target="_blank" href="">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>);
 }

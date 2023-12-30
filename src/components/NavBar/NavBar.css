@@ -10,6 +10,14 @@ nav {
     color: white;
     text-decoration: none;
 }
+.logo{
+    margin-left: 10px;
+    font-size: 38px;
+    font-weight: 700;
+}
+.logo-dot{
+    color: #5D87B4;
+}
 .header-ul {
     display: flex;
     justify-content: space-between;
@@ -149,6 +157,12 @@ nav {
         padding-top: 6rem;
         padding-left: 1rem;
         font-size: 34px;
+    }
+    .header-ul{
+        padding-top: 5px;
+    }
+    .nav-ul{
+        padding-top: 5px;
     }
 }
 /* @media only screen and (max-width: 1200px) and (min-width: 600px) {

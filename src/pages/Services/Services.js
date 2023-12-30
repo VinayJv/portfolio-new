@@ -16,7 +16,7 @@ export function Services() {
     return (
     <div className="services-container">
         <div className="services-inner-container-intro">
-            <p className="introduction-header-highlight">SERVICES</p>
+            <p className="introduction-header-highlight">SKILLS</p>
             <p className="lg-text">What I Am Great At</p>
             <p className="sm-text-additional">Skilled in MERN (MongoDB, Express.js, React, Node.js) stack, I develop scalable web applications. Proficient in MongoDB for database management, React for dynamic UIs, and Express.js/Node.js for seamless server-side logic.</p>
         </div>
