@@ -1,0 +1,46 @@
+.loader-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: image-animation-bg 1s ease forwards;
+}
+.inner-loader-container{
+    display: flex;
+    position: relative;
+    top: -50px;
+}
+.inner-loader-container > p {
+    font-size: 100px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+.fullstop {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #5D87B4;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+}
+.animated-dot {
+    animation: bouncing 2s ease forwards;
+}
+
+@keyframes bouncing {
+
+    0%, 30%, 60%, 100% {
+        top: 90px;
+    } 
+    15% {
+        top: 40px;
+    }
+    45% {
+        top: 55px;
+    }
+    75% {
+        top: 70px;
+    }
+}

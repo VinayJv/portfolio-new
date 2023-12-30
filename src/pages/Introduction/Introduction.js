@@ -27,7 +27,7 @@ export function Introduction() {
                 </div>
             </div>
             <div className="introduction-mobile only-mobile">
-                    <p className="introduction-header-highlight introduction-header-highlight-mobile">INTRODUCTION</p>
+                    <p className="introduction-header-highlight">INTRODUCTION</p>
                     <p className="lg-text">Full Stack Web <span>Developer</span></p>
                     <p className="introduction-sm-text">Highly motivated and detail-oriented web developer with a strong foundation in the MERN (MongoDB, Express.js, React.js, Node.js) stack. A rapid learner dedicated to efficiently assimilating new concepts, and apply newfound knowledge to elevate the quality of web development projects. </p>
             </div>

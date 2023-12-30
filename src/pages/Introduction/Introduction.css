@@ -1,25 +1,19 @@
 .introduction-container{
     display: flex;
-    height: 94svh;
-    max-width: 1200px;
+    height: calc(100svh - 60px);
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-}
-.sm-text{
-    font-size: 14px;
+    max-width: 1200px;
+    padding: 0 1rem;
+    gap: 2rem;
 }
 
 .introduction-sm-text {
-    font-size: 14px;    
-    line-height: 22px;
-    max-width: 250px;
     text-align: left;
-    align-self: left;
     margin-top: 1rem;
 }
-.bar{
+.bar {
     width: 50%;
     margin: 14px 0px;
     border-radius: 2px;
@@ -35,6 +29,7 @@
     flex-direction: column;
     animation: fade-in 1s ease forwards;
     margin-left: 1rem;
+    max-width: 270px;
 }
 .image-container {
     position: relative;
@@ -44,6 +39,7 @@
     background-color: #BCEBE2;
     aspect-ratio: 1;
     opacity: 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     animation: image-animation-bg 1s ease forwards;
 }
 .intro-img {
@@ -55,22 +51,22 @@
     animation: image-animation 1s ease forwards 200ms;
 }
 .margin-set {
-    margin-top: -14px;
+    margin-top: -10px;
 }
 .name-text{
+    white-space: nowrap;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 68px;
 }
 .lg-text{
     font-weight: 700;
     font-size: 32px;
 }
 .introduction-header-highlight{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #5D87B4;
     margin-bottom: 1rem;
-    letter-spacing: 1px;
 }
 .dot{
     position: relative;
@@ -109,40 +105,36 @@
 
 @media only screen and (max-width: 600px) {
     .introduction-container {
-        height: 70svh;
+        height: 80svh;
         padding: 0rem 1rem;
         gap: 0rem;
     }
     .name-text{
-        white-space: nowrap;
         font-size: 42px;
     }
     .intro-img {
         scale: .6;
-        transform: translate(-80%, -40%);
+        transform: translate(-80%, -30%);
     }
     .introduction-mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
         background-color: #333238;
         text-align: center;
     }
-    .introduction-header-highlight-mobile{
-        margin-bottom: 10px;
-    }
     .introduction-sm-text {
-        max-width: 500px;
+        max-width: 350px;
         text-align: center;
         margin-top: 1rem;  
     }
 }
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+/* @media only screen and (max-width: 1200px) and (min-width: 600px) {
     .introduction-container {
         gap: 2rem;
     }
     .introduction-container-child{
         width: 30%;
     }
-}
+} */

@@ -1,6 +1,6 @@
 /* #2c2c33, #ae5029, #282831, #5D87B4, #333238 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 *{
   --color-1: #2c2c33;
   --color-2: #ae5029;
@@ -16,6 +16,7 @@
   scrollbar-width: none;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 }
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -34,14 +35,11 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-  .only-mobile{
+  .only-mobile {
     display: block;
   }
-  .hide-from-mobile{
+  .hide-from-mobile {
     display: none;
-  }
-  .main-page{
-    width: 100%;
   }
 }
 @media only screen and (max-width: 1200px) {
