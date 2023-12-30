@@ -127,7 +127,8 @@
     .introduction-sm-text {
         max-width: 350px;
         text-align: center;
-        margin-top: 1rem;  
+        margin-top: 1rem;
+        font-size: 14px;  
     }
 }
 /* @media only screen and (max-width: 1200px) and (min-width: 600px) {

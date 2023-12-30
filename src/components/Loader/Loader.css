@@ -26,7 +26,7 @@
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
 }
 .animated-dot {
-    animation: bouncing 2s ease forwards;
+    animation: bouncing 2s ease-in-out forwards;
 }
 
 @keyframes bouncing {
