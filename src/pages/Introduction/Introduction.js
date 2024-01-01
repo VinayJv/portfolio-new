@@ -1,5 +1,10 @@
 import "./Introduction.css";
 import background from "./Ellipse.png";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+
+
 
 export function Introduction() {
     return (
@@ -11,9 +16,11 @@ export function Introduction() {
                         <p className="name-text margin-set">Jatav <span className="dot">.</span></p>
                     </div>
                     <div className="bar"></div>
-                    <p className="sm-text">LinkedIn | Instagram</p>
-                    <p className="sm-text hide-from-mobile">GitHub | Behance</p>
-                    <button className="contact-btn">CONTACT ME</button>
+                    <div className="contact-icons-container">
+                        <FaLinkedin className="contact-icons"/>
+                        <FaGithub className="contact-icons"/>
+                        <FaDiscord className="contact-icons"/>
+                    </div>
                 </div>
                 <div className="image-container">
                     <div className="bg-circle" style={{ backgroundImage: `url(${background})`}}></div>

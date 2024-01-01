@@ -3,7 +3,6 @@ import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
 import { Introduction } from './pages/Introduction/Introduction';
 import { Portfolio } from './pages/Portfolio/Portfolio';
-import { Services } from './pages/Services/Services';
 import { Loader } from './components/Loader/Loader';
 import { useEffect, useState } from 'react';
 import { Footer } from './components/Footer/Footer';

@@ -3,7 +3,7 @@
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem 5rem;
+    padding: 2rem 5rem;
 }
 .bg-color{
     background-color: #2c2c33;
@@ -20,15 +20,22 @@
     border-radius: 2px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
     transition: all 200ms ease;
+    opacity: 0;
+    animation: image-animation-bg 1s ease forwards;
+}
+.project-cards:hover{
+    background-position: 0px -5px;
 }
 .project-cards:nth-child(1){
     background-size: cover;
     background-image: url("./social.jpg");
 }
 .project-cards:nth-child(2){
+    background-size: cover;
     background-image: url("./pcshop.jpg");
 }
 .project-cards:nth-child(3){
+    background-size: cover;
     background-image: url("./event.jpg");
 }
 .project-cards:hover .floating-project-info{
@@ -42,6 +49,20 @@
     padding: 1rem 10px;
     background: linear-gradient(0deg, black 30%, rgba(0, 0, 0, .2));
     transition: bottom 200ms ease;
+}
+.project-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow {
+    transform: rotate(-90deg);
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: transform 400ms ease;
+}
+.project-cards:hover .arrow{
+    transform: rotate(450deg);
 }
 .project-title{
     font-size: 28px;
@@ -57,18 +78,132 @@
 .project-links-container > a {
     color: gray;
  }
+ .backend-project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+ }
+ .backend-project-cards{
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+    transition: all 200ms ease;
+    opacity: 0;
+    animation: slide-from-left 1s ease forwards;
+    animation-timeline: view();
+ }
+ .backend-project-cards:hover {
+    background-position: 0px -5px;
+}
+.backend-project-cards:nth-child(1){
+    background-size: cover;
+    background-position: 0px -210px;
+    background-image: url("./voyage.jpg");
+}
+.backend-project-cards:nth-child(1):hover{
+    background-position: 0px -215px;
+}
+ .backend-project-cards:nth-child(2){
+    background-size: cover;
+    background-image: url("./fitness.jpg");
+ }
+ .backend-project-cards:hover .floating-project-info{
+    backdrop-filter: blur(2px);
+    bottom: 0;
+}
+.backend-project-cards:hover .arrow{
+    transform: rotate(450deg);
+}
+.contacts-container{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+.contact-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 10px;
+    padding: 10px 1rem;
+    border-radius: 2px;
+    background-color: #333238;
+    transition: all 200ms;
+    text-decoration: none;
+    color: white;
+}
+.contact-bg:hover{
+    color: #5D87B4;
+    background-color: #ffffff10;
+}
+.contacts-icons{
+    width: 30px;
+    height: 30px;
+    transition: all 200ms;
+}
+.contact-bg:hover .contacts-icons{
+    color: #5D87B4;
+}
+.bg-color{
+    background-color: #333238;
+}
+.footer{
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 1rem;
+}
+.heart{
+    position: relative;
+    left: 5px;
+    bottom: -5px;
+    width: 25px;
+    height: 25px;
+    color: rgb(255, 50, 50);
+    animation: floating 3s ease-out infinite;
+}
+
+@keyframes floating{
+    0% {
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));
+		transform: translatey(0px);
+	}
+	50% {
+		filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+		transform: translatey(-5px);
+	}
+	100% {
+		filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));
+		transform: translatey(0px);
+	}
+}
 
 @media only screen and (max-width: 600px) {
     .portfolio-container{
-        padding: 5rem 1rem;
+        padding: 1rem 1rem;
     }
     .projects-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    .project-cards{
+    .project-cards {
         overflow: hidden;
     }
-    .bg-color{
-        background-color: #333238;
+    .backend-project-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+     }
+     .contacts-container{
+        flex-direction: column;
+    }
+    .backend-project-cards:nth-child(1){
+        background-position: 0px -100px;
+    }
+    .backend-project-cards:nth-child(1):hover{
+        background-position: 0px -105px;
+    }
+    .footer{
+        padding: 2rem 1rem;
     }
 }
