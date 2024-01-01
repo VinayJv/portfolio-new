@@ -49,7 +49,7 @@ export function NavBar() {
                     </div>
                 </ul>
                 <div className="nav-options-container">
-                    {["About", "Portfolio", "Connect"].map((item,index)=><p id={item} onClick={handleNavRouting} className={`${toggleClass ? "nav-open-animation" : "nav-close-animation"} nav-links`} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
+                    {["About", "Portfolio"].map((item,index)=><p id={item} onClick={handleNavRouting} className={`${toggleClass ? "nav-open-animation" : "nav-close-animation"} nav-links`} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
                 </div>
             </div>
         </nav>
