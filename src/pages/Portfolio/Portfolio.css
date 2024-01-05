@@ -14,14 +14,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+
 .project-cards{
     height: 300px;
     position: relative;
     border-radius: 2px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
     transition: all 200ms ease;
-    opacity: 0;
-    animation: image-animation-bg 1s ease forwards;
 }
 .project-cards:hover{
     background-position: 0px -5px;
@@ -247,5 +246,12 @@
     .quote > span{
         font-size: 32px;
         font-family: 'Amatic SC', sans-serif;
+    }
+    .creations-container {
+        position: relative;
+        left: -80px;
+        opacity: 0;
+        animation: slide-from-left 1s ease forwards;
+        animation-delay: 0ms;
     }
 }

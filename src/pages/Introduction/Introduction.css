@@ -129,7 +129,7 @@
 
 @media only screen and (max-width: 600px) {
     .introduction-container {
-        height: calc(100vh - 60px);
+        height: 80vh;
         padding: 0rem 1rem;
         gap: 0rem;
     }
