@@ -19,21 +19,22 @@ export function Portfolio() {
     const card4Ref = useRef();
     const card5Ref = useRef();
 
+    const observer = new IntersectionObserver((entries)=>{
+        const target = entries[0].target.id;
+        if(target === "card1") {
+            setIsCardVisible({...isCardVisible, card1: entries[0].isIntersecting});
+        } else if(target === "card2"){
+            setIsCardVisible({...isCardVisible, card2: entries[0].isIntersecting});
+        } else if(target === "card3"){
+            setIsCardVisible({...isCardVisible, card3: entries[0].isIntersecting});
+        } else if(target === "card4"){
+            setIsCardVisible({...isCardVisible, card4: entries[0].isIntersecting});
+        } else {
+            setIsCardVisible({...isCardVisible, card5: entries[0].isIntersecting});
+        }
+    });
+
     useEffect(()=>{
-        const observer = new IntersectionObserver((entries)=>{
-            const target = entries[0].target.id;
-            if(target === "card1") {
-                setIsCardVisible({...isCardVisible, card1: entries[0].isIntersecting});
-            } else if(target === "card2"){
-                setIsCardVisible({...isCardVisible, card2: entries[0].isIntersecting});
-            } else if(target === "card3"){
-                setIsCardVisible({...isCardVisible, card3: entries[0].isIntersecting});
-            } else if(target === "card4"){
-                setIsCardVisible({...isCardVisible, card4: entries[0].isIntersecting});
-            } else {
-                setIsCardVisible({...isCardVisible, card5: entries[0].isIntersecting});
-            }
-        });
         observer.observe(card1Ref.current);
         observer.observe(card2Ref.current);
         observer.observe(card3Ref.current);

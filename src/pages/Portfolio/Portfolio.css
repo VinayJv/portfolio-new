@@ -248,10 +248,6 @@
         font-family: 'Amatic SC', sans-serif;
     }
     .creations-container {
-        position: relative;
-        left: -80px;
-        opacity: 0;
-        animation: slide-from-left 1s ease forwards;
-        animation-delay: 0ms;
+        animation: from-left 1s ease forwards;
     }
 }
