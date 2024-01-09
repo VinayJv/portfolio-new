@@ -6,35 +6,21 @@ import "./Portfolio.css";
 
 
 export function Portfolio() {
-    const [isCardVisible, setIsCardVisible] = useState({
-        card1: false,
-        card2: false,
-        card3: false,
-        card4: false,
-        card5: false
-    });
+
     const card1Ref = useRef();
     const card2Ref = useRef();
     const card3Ref = useRef();
     const card4Ref = useRef();
     const card5Ref = useRef();
 
-    const observer = new IntersectionObserver((entries)=>{
-        const target = entries[0].target.id;
-        if(target === "card1") {
-            setIsCardVisible({...isCardVisible, card1: entries[0].isIntersecting});
-        } else if(target === "card2"){
-            setIsCardVisible({...isCardVisible, card2: entries[0].isIntersecting});
-        } else if(target === "card3"){
-            setIsCardVisible({...isCardVisible, card3: entries[0].isIntersecting});
-        } else if(target === "card4"){
-            setIsCardVisible({...isCardVisible, card4: entries[0].isIntersecting});
-        } else {
-            setIsCardVisible({...isCardVisible, card5: entries[0].isIntersecting});
-        }
-    });
-
     useEffect(()=>{
+        
+        const observer = new IntersectionObserver((entries)=> {
+            const target = entries[0].target;
+            console.log(target);
+            target.classList.add('creations-container');
+        });
+
         observer.observe(card1Ref.current);
         observer.observe(card2Ref.current);
         observer.observe(card3Ref.current);
@@ -49,7 +35,7 @@ export function Portfolio() {
                 <p className={`introduction-header-highlight`}>CREATIONS</p>
                 <p className="lg-text" style={{ marginBottom: "2rem" }}>My Master Collection</p>
                 <div className="projects-container">
-                    <div className={`project-cards ${isCardVisible.card1 ? "creations-container" : undefined}`} ref={card1Ref} id="card1">
+                    <div className={`project-cards`} ref={card1Ref} id="card1">
                         <div className="floating-project-info">
                             <div className="project-title-container">
                                 <p className="project-title">Utter</p>
@@ -62,7 +48,7 @@ export function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className={`project-cards ${isCardVisible.card2 ? "creations-container" : undefined}`} ref={card2Ref} id="card2">
+                    <div className={`project-cards`} ref={card2Ref} id="card2">
                         <div className="floating-project-info">
                             <div className="project-title-container">
                                 <p className="project-title">RGB Peripherals</p>
@@ -75,7 +61,7 @@ export function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className={`project-cards ${isCardVisible.card3 ? "creations-container" : undefined}`} ref={card3Ref} id="card3">
+                    <div className={`project-cards`} ref={card3Ref} id="card3">
                         <div className="floating-project-info">
                             <div className="project-title-container">
                                 <p className="project-title">MeetUp</p>
@@ -93,7 +79,7 @@ export function Portfolio() {
             <div className="portfolio-container">
                 <p className="lg-text" style={{ marginBottom: "2rem" }}>Backend Projects</p>
                 <div className="backend-project-container">
-                    <div className={`backend-project-cards ${isCardVisible.card4 ? "creations-container" : undefined}`} ref={card4Ref} id="card4">
+                    <div className={`backend-project-cards`} ref={card4Ref} id="card4">
                         <div className="floating-project-info">
                             <div className="project-title-container">
                                 <p className="project-title">Voyage</p>
@@ -105,7 +91,7 @@ export function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className={`backend-project-cards ${isCardVisible.card5 ? "creations-container" : undefined}`} ref={card5Ref} id="card5">
+                    <div className={`backend-project-cards`} ref={card5Ref} id="card5">
                         <div className="floating-project-info">
                             <div className="project-title-container">
                                 <p className="project-title">Fitness Pal</p>
