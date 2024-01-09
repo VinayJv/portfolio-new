@@ -7,6 +7,7 @@ import { FaDiscord } from "react-icons/fa";
 
 
 export function Introduction() {
+    window.scrollTo(0, 0);
     return (
         <>
             <div className="introduction-container">

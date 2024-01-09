@@ -6,6 +6,7 @@ import "./Portfolio.css";
 
 
 export function Portfolio() {
+    window.scrollTo(0, 0);
 
     const card1Ref = useRef();
     const card2Ref = useRef();
