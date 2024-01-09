@@ -5,7 +5,7 @@ import { Introduction } from './pages/Introduction/Introduction';
 import { Portfolio } from './pages/Portfolio/Portfolio';
 import { Loader } from './components/Loader/Loader';
 import { useEffect, useState } from 'react';
-import { Footer } from './components/Footer/Footer';
+import { NotFound } from './components/404/404';
 
 function App() {
   const[loader,setLoader] = useState(true);
@@ -17,7 +17,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/' element={<div><Introduction /></div>}></Route>
+        <Route path='*' element={<NotFound />}></Route>
+        <Route path='/' element={<Introduction />}></Route>
         <Route path='/portfolio' element={<Portfolio />}></Route>
       </Routes>
     </div>
