@@ -11,10 +11,11 @@ nav {
     text-decoration: none;
 }
 .logo{
-    margin-left: 10px;
     font-size: 38px;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 60px;
+    text-align: center;
 }
 .logo-dot{
     color: #5D87B4;
@@ -67,27 +68,69 @@ nav {
     animation-fill-mode: forwards;
 }
 
-.close-menu{
-    cursor: pointer;
-    position: relative;
-    width: 60px;
-    height: 60px;
-}
 .closebar{
     position: absolute;
+    left: 50%;
     top: 50%;
-    left: 18%;
     width: 70%;
     height: 4px;
+    transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 25px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 .one{
-    transform: rotate(45deg);
+    top: 35%;
+    animation: rotate-clockwise 500ms ease forwards;
 }
 .two{
-    transform: rotate(-45deg);
+    top: 65%;
+    animation: rotate-anti-clockwise 500ms ease forwards;
+}
+.bar-animation-one{
+    animation: reset-one-bar 500ms ease forwards;
+}
+.bar-animation-two{
+    animation: reset-two-bar 500ms ease forwards;
+}
+@keyframes reset-one-bar{
+    from{
+        left: 15%;
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    to{
+        left: 15%;
+        top: 30%;
+        transform: rotate(0deg);
+    }
+}
+@keyframes reset-two-bar{
+    from{
+        left: 15%;
+        top: 52%;
+        transform: rotate(-45deg);
+    }
+    to{
+        left: 15%;
+        top: 62%;
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate-clockwise{
+    to{
+        left: 15%;
+        top: 50%;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotate-anti-clockwise{
+    to{
+        left: 15%;
+        top: 50%;
+        transform: rotate(-45deg);
+    }
 }
 
 .hamburger-menu{
@@ -107,10 +150,10 @@ nav {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 .top{
-    top: 25%
+    top: 35%
 }
-.bottom {
-    top:75%;
+.centre {
+    top: 65%;
 }
 .nav-connect-container{
     display: flex;

@@ -37,15 +37,14 @@ export function NavBar() {
                 <div className="hamburger-menu" onClick={handleNav}>
                     <div className="hambar top"></div>
                     <div className="hambar centre"></div>
-                    <div className="hambar bottom"></div>
                 </div>
             </ul>
             <div className={`nav-menu`} style={{ animationName: animationClass, display: showNav ? "flex" : "none" }}>
                 <ul className="nav-ul">
                 <p className="logo">VJ<span className="logo-dot">.</span></p>
-                    <div className={`close-menu ${toggleClass ? "nav-open-animation" : "nav-close-animation"}`} onClick={handleNavClose}>
-                        <div className="closebar one"></div>
-                        <div className="closebar two"></div>
+                    <div className="hamburger-menu" onClick={handleNavClose}>
+                        <div className={`closebar ${toggleClass ? "one" : "bar-animation-one"}`}></div>
+                        <div className={`closebar ${toggleClass ? "two" : "bar-animation-two"}`}></div>
                     </div>
                 </ul>
                 <div className="nav-options-container">
