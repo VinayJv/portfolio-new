@@ -1,12 +1,11 @@
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Services } from "../Services/Services";
 import { BsBalloonHeartFill } from "react-icons/bs";
-import { useEffect, useRef, useState } from "react"; 
+import { useEffect, useRef, useState } from "react";
 import "./Portfolio.css";
 
 
 export function Portfolio() {
-    window.scrollTo(0, 0);
 
     const card1Ref = useRef();
     const card2Ref = useRef();
@@ -14,19 +13,23 @@ export function Portfolio() {
     const card4Ref = useRef();
     const card5Ref = useRef();
 
-    const observer = new IntersectionObserver((entries)=> {
-        const target = entries[0].target;
-        console.log(target);
-        target.classList.add('creations-container');
-    });
+    const options = {
+        threshold: 0.35
+    }
 
-    useEffect(()=>{
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const target = entries[0].target;
+            if(entries[0].isIntersecting){
+                target.classList.add('creations-container');
+            }
+        }, options);
         observer.observe(card1Ref.current);
         observer.observe(card2Ref.current);
         observer.observe(card3Ref.current);
         observer.observe(card4Ref.current);
         observer.observe(card5Ref.current);
-    },[]);
+    }, []);
 
     return (
         <div>
