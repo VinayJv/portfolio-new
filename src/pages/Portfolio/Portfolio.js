@@ -13,14 +13,13 @@ export function Portfolio() {
     const card4Ref = useRef();
     const card5Ref = useRef();
 
-    useEffect(()=>{
-        
-        const observer = new IntersectionObserver((entries)=> {
-            const target = entries[0].target;
-            console.log(target);
-            target.classList.add('creations-container');
-        });
+    const observer = new IntersectionObserver((entries)=> {
+        const target = entries[0].target;
+        console.log(target);
+        target.classList.add('creations-container');
+    });
 
+    useEffect(()=>{
         observer.observe(card1Ref.current);
         observer.observe(card2Ref.current);
         observer.observe(card3Ref.current);
