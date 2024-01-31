@@ -2,7 +2,8 @@ import "./Introduction.css";
 import background from "./Ellipse.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 
 
@@ -18,9 +19,9 @@ export function Introduction() {
                     </div>
                     <div className="bar"></div>
                     <div className="contact-icons-container">
-                        <FaLinkedin className="contact-icons"/>
-                        <FaGithub className="contact-icons"/>
-                        <FaDiscord className="contact-icons"/>
+                        <a href="https://www.linkedin.com/in/vinay-jatav-1a3795247/" target="_blank" rel="noreferrer"><FaLinkedin className="contact-icons"/></a>
+                        <a href="https://github.com/VinayJv" target="_blank" rel="noreferrer"><FaGithub className="contact-icons"/></a>
+                        <a href="https://twitter.com/Vinay_jv_" target="_blank" rel="noreferrer"><FaXTwitter className="contact-icons"/></a>
                     </div>
                 </div>
                 <div className="image-container">

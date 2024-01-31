@@ -1,11 +1,15 @@
-import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 import { Services } from "../Services/Services";
 import { BsBalloonHeartFill } from "react-icons/bs";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "./Portfolio.css";
+import { NavLink } from "react-router-dom";
 
 
 export function Portfolio() {
+    window.scrollTo(0, 0);
 
     const card1Ref = useRef();
     const card2Ref = useRef();
@@ -46,8 +50,8 @@ export function Portfolio() {
                             </div>
                             <p className="project-info">An social media website for people.</p>
                             <div className="project-links-container">
-                                <a target="_blank" href="">Live Code</a>
-                                <a target="_blank" href="">Github</a>
+                                <a target="_blank" href="https://utter-vj.netlify.app/" rel="noreferrer">Live Code</a>
+                                <a target="_blank" href="https://github.com/VinayJv/social-media-project-2" rel="noreferrer">Github</a>
                             </div>
                         </div>
                     </div>
@@ -59,8 +63,8 @@ export function Portfolio() {
                             </div>
                             <p className="project-info">An e-commerce website.</p>
                             <div className="project-links-container">
-                                <a target="_blank" href="">Live Code</a>
-                                <a target="_blank" href="">Github</a>
+                                <a target="_blank" href="https://pc-shop-vj.netlify.app/" rel="noreferrer">Live Code</a>
+                                <a target="_blank" href="https://github.com/VinayJv/project-1-neog" rel="noreferrer">Github</a>
                             </div>
                         </div>
                     </div>
@@ -72,12 +76,13 @@ export function Portfolio() {
                             </div>
                             <p className="project-info">An event manager.</p>
                             <div className="project-links-container">
-                                <a target="_blank" href="">Live Code</a>
-                                <a target="_blank" href="">Github</a>
+                                <a target="_blank" href="https://meetup-vj.netlify.app/" rel="noreferrer">Live Code</a>
+                                <a target="_blank" href="https://github.com/VinayJv/coding-round-8" rel="noreferrer">Github</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <NavLink to="/projects" className="navlinks">View More</NavLink>
             </div>
             <div className="portfolio-container">
                 <p className="lg-text" style={{ marginBottom: "2rem" }}>Backend Projects</p>
@@ -90,7 +95,7 @@ export function Portfolio() {
                             </div>
                             <p className="project-info">An API endpoint.</p>
                             <div className="project-links-container">
-                                <a target="_blank" href="">View Documentation</a>
+                                <a target="_blank" href="https://documenter.getpostman.com/view/23552591/2s9YJXaQxY" rel="noreferrer">View Documentation</a>
                             </div>
                         </div>
                     </div>
@@ -102,7 +107,7 @@ export function Portfolio() {
                             </div>
                             <p className="project-info">An API endpoint.</p>
                             <div className="project-links-container">
-                                <a target="_blank" href="">View Documentation</a>
+                                <a target="_blank" href="https://documenter.getpostman.com/view/23552591/2s9YytfznX" rel="noreferrer">View Documentation</a>
                             </div>
                         </div>
                     </div>
@@ -114,17 +119,17 @@ export function Portfolio() {
                 <p className="sm-text" style={{ marginBottom: "1rem" }}>Feel free to reach out via the provided social media links. Excited to connect with you! 😇
                 </p>
                 <div className="contacts-container">
-                    <a className="contact-bg" href="">
+                    <a className="contact-bg" href="https://www.linkedin.com/in/vinay-jatav-1a3795247/" target="_blank" rel="noreferrer">
                         <FaLinkedin className="contacts-icons" />
                         <p>LinkedIn</p>
                     </a>
-                    <a className="contact-bg" href="">
+                    <a className="contact-bg" href="https://github.com/VinayJv" target="_blank" rel="noreferrer">
                         <FaGithub className="contacts-icons" />
                         <p>Github</p>
                     </a>
-                    <a className="contact-bg" href="">
-                        <FaDiscord className="contacts-icons" />
-                        <p>Discord</p>
+                    <a className="contact-bg" href="https://twitter.com/Vinay_jv_" target="_blank" rel="noreferrer">
+                        <FaXTwitter className="contacts-icons" />
+                        <p>Twitter</p>
                     </a>
                 </div>
             </div>

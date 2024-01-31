@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 export function NavBar() {
@@ -33,7 +33,7 @@ export function NavBar() {
     return (
         <nav>
             <ul className="header-ul">
-                <p className="logo">VJ<span className="logo-dot">.</span></p>
+                <p className="logo" onClick={()=>navigate("/")}>VJ<span className="logo-dot">.</span></p>
                 <div className="hamburger-menu" onClick={handleNav}>
                     <div className="hambar top"></div>
                     <div className="hambar centre"></div>
@@ -49,7 +49,7 @@ export function NavBar() {
                 </ul>
                 <div className="nav-options-container">
                     {["About", "Portfolio"].map((item,index)=><p id={item} key={index} onClick={handleNavRouting} className={`${toggleClass ? "nav-open-animation" : "nav-close-animation"} nav-links`} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
-                    <div className="nav-connect-container">{["LinkedIn", "Github", "Discord"].map((item,index)=><p key={index} className={`${toggleClass ? "nav-connect-links-open" : "nav-connect-links-close"}`} style={toggleClass ? { animationDelay: `${index*350}ms`} : {animationDelay: `0s`}}>{item}</p>)}</div>
+                    {/* <div className="nav-connect-container">{["Download Resume"].map((item,index)=><p key={index} className={`${toggleClass ? "nav-connect-links-open" : "nav-connect-links-close"}`} style={toggleClass ? { animationDelay: `${index*350}ms`} : {animationDelay: `0s`}}>{item}</p>)}</div> */}
                 </div>
             </div>
         </nav>

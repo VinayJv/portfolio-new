@@ -6,6 +6,7 @@ import { Portfolio } from './pages/Portfolio/Portfolio';
 import { Loader } from './components/Loader/Loader';
 import { useEffect, useState } from 'react';
 import { NotFound } from './components/404/404';
+import { Projects } from './pages/Projects/Projects';
 
 function App() {
   const[loader,setLoader] = useState(true);
@@ -20,6 +21,7 @@ function App() {
         <Route path='*' element={<NotFound />}></Route>
         <Route path='/' element={<Introduction />}></Route>
         <Route path='/portfolio' element={<Portfolio />}></Route>
+        <Route path='/projects' element={<Projects />}></Route>
       </Routes>
     </div>
   );

@@ -58,10 +58,10 @@
     transform: rotate(-90deg);
     font-size: 24px;
     color: rgba(255, 255, 255, 0.8);
-    transition: transform 400ms ease;
+    transition: transform 300ms ease;
 }
 .project-cards:hover .arrow{
-    transform: rotate(450deg);
+    transform: rotate(90deg);
 }
 .project-title{
     font-size: 28px;
@@ -88,7 +88,7 @@
     height: 300px;
     border-radius: 2px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
-    transition: all 200ms ease;
+    transition: all 300ms ease;
  }
  .backend-project-cards:hover {
     background-position: 0px -5px;
@@ -110,7 +110,7 @@
     bottom: 0;
 }
 .backend-project-cards:hover .arrow{
-    transform: rotate(450deg);
+    transform: rotate(90deg);
 }
 .contacts-container{
     cursor: pointer;
@@ -131,7 +131,10 @@
     transition: all 200ms;
     text-decoration: none;
     color: white;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.500);
+}
+.contact-bg > p{
+    text-shadow: none;
 }
 .contact-bg:hover{
     color: #5D87B4;
@@ -173,7 +176,7 @@
     font-size: 32px;
     letter-spacing: 2px;
     font-weight: 700;
-    color: gray;
+    color: rgb(189, 189, 189);
     font-family: 'Amatic SC', sans-serif;
 }
 .quote > span{
@@ -184,7 +187,13 @@
     align-self: flex-end;
     font-size: 18px;
     font-family: 'Dancing Script',sans-serif;
-    color: gray;
+    color: rgb(189, 189, 189);
+}
+.navlinks{
+    align-self: flex-end;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: rgb(189, 189, 189);
 }
 @keyframes from-left{
     from{
