@@ -118,7 +118,7 @@ export function Portfolio() {
                 <p className="lg-text" style={{ marginBottom: "1rem" }}>Ways To Contact Me</p>
                 <p className="sm-text">Feel free to reach out via the provided social media links or mail me at <span style={{textDecorationLine: "underline"}}>vinay.jatav.dev@gmail.com</span>. Excited to connect with you! 😇
                 </p>
-                <a href="http://localhost:3000/VinayJatav(Resume).pdf" download className="download-btn" style={{ margin: "1rem 0", textDecorationLine: "underline"}}>Download Resume</a>
+                <a href="https://drive.google.com/file/d/1dzXsfZIpYV47GfPvKJHNIVWIALPdL0p6/view?usp=sharing" download className="download-btn" style={{ margin: "1rem 0", textDecorationLine: "underline"}}>Download Resume</a>
                 <div className="contacts-container">
                     <a className="contact-bg" href="https://www.linkedin.com/in/vinay-jatav-1a3795247/" target="_blank" rel="noreferrer">
                         <FaLinkedin className="contacts-icons" />
