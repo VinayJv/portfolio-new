@@ -117,6 +117,12 @@ nav {
 .centre {
     top: 65%;
 }
+.download-btn{
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
 .nav-connect-container{
     display: flex;
     gap: 1rem;

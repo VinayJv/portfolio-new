@@ -49,7 +49,7 @@ export function NavBar() {
                 </ul>
                 <div className="nav-options-container">
                     {["About", "Portfolio"].map((item,index)=><p id={item} key={index} onClick={handleNavRouting} className={`${toggleClass ? "nav-open-animation" : "nav-close-animation"} nav-links`} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
-                    {/* <div className="nav-connect-container">{["Download Resume"].map((item,index)=><p key={index} className={`${toggleClass ? "nav-connect-links-open" : "nav-connect-links-close"}`} style={toggleClass ? { animationDelay: `${index*350}ms`} : {animationDelay: `0s`}}>{item}</p>)}</div> */}
+                    <a href="http://localhost:3000/VinayJatav(Resume).pdf" download className={`${toggleClass ? "nav-connect-links-open" : "nav-connect-links-close"} download-btn`} style={toggleClass ? { animationDelay: `${350}ms`} : {animationDelay: `0s`}}>Download Resume</a>
                 </div>
             </div>
         </nav>

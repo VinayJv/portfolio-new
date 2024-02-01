@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { NotFound } from './components/404/404';
 import { Projects } from './pages/Projects/Projects';
 
+
 function App() {
   const[loader,setLoader] = useState(true);
   useEffect(()=>{
