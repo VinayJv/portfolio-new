@@ -38,7 +38,7 @@ export function Introduction() {
             <div className="introduction-mobile only-mobile">
                     <p className="introduction-header-highlight">INTRODUCTION</p>
                     <p className="lg-text">Full Stack Web <span>Developer</span></p>
-                    <p className="introduction-sm-text">Hello, I am Vinay Jatav. I am a full stack web developer deticated to craft immersive and user-friendly experiences with a strong foundation in the MERN (MongoDB, Express.js, React.js, Node.js) stack. A rapid learner dedicated to efficiently assimilating new concepts, and apply newfound knowledge to elevate the quality of web development projects. </p>
+                    <p className="introduction-sm-text">Hello, I am Vinay Jatav. I am a full stack web developer dedicated to craft immersive and user-friendly experiences with a strong foundation in the MERN (MongoDB, Express.js, React.js, Node.js) stack. A rapid learner dedicated to efficiently assimilating new concepts, and apply newfound knowledge to elevate the quality of web development projects. </p>
             </div>
         </>);
 }
