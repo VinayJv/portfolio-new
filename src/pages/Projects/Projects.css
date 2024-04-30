@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 
-.grid-items:hover{
+.grid-items:hover {
     opacity: 1;
 }
 .grid-items:hover .arrow{
