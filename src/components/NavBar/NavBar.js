@@ -49,7 +49,7 @@ export function NavBar() {
                 </ul>
                 <div className="nav-options-container">
                     {["About", "Portfolio"].map((item,index)=><p id={item} key={index} onClick={handleNavRouting} className={`${toggleClass ? "nav-open-animation" : "nav-close-animation"} nav-links`} style={toggleClass ? { animationDelay: `${index*150}ms`} : {animationDelay: `-${index*150}ms`}}>{item}</p>)}
-                    <a href="https://docs.google.com/document/d/1ZranqAqHrh2VQedppWkTvjyun1e5mS2SyLl20vV-IiI/edit?usp=sharing" download className={`${toggleClass ? "nav-connect-links-open" : "nav-connect-links-close"} download-btn`} style={toggleClass ? { animationDelay: `${350}ms`} : {animationDelay: `0s`}}>Download Resume</a>
+                    <a href="https://drive.google.com/file/d/1wKl8I7p8XQ7DIeTbN8rXx9qPdjFO1rrm/view?usp=drive_link" download className={`${toggleClass ? "nav-connect-links-open" : "nav-connect-links-close"} download-btn`} style={toggleClass ? { animationDelay: `${350}ms`} : {animationDelay: `0s`}}>Download Resume</a>
                 </div>
             </div>
         </nav>
