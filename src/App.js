@@ -12,7 +12,7 @@ import { Projects } from './pages/Projects/Projects';
 function App() {
   const[loader,setLoader] = useState(true);
   useEffect(()=>{
-    setTimeout(()=>setLoader(false),2100);
+    setTimeout(()=>setLoader(false),4200);
   },[])
   return (
     loader ? <Loader /> :

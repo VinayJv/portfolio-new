@@ -20,7 +20,7 @@ export function Portfolio() {
     const options = {
         threshold: 0.35
     }
-
+   
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const target = entries[0].target;
@@ -33,6 +33,7 @@ export function Portfolio() {
         observer.observe(card3Ref.current);
         observer.observe(card4Ref.current);
         observer.observe(card5Ref.current);
+         // eslint-disable-next-line
     }, []);
 
     return (
@@ -42,6 +43,19 @@ export function Portfolio() {
                 <p className={`introduction-header-highlight`}>CREATIONS</p>
                 <p className="lg-text" style={{ marginBottom: "2rem" }}>My Master Collection</p>
                 <div className="projects-container">
+                    <div className={`project-cards`} ref={card3Ref} id="card3">
+                        <div className="floating-project-info">
+                            <div className="project-title-container">
+                                <p className="project-title">Login Flow</p>
+                                <p className="arrow">{`➤`}</p>
+                            </div>
+                            <p className="project-info">An e-commerce login flow.</p>
+                            <div className="project-links-container">
+                                <a target="_blank" href="https://login-flow-ecommerce.vercel.app/" rel="noreferrer">Live Code</a>
+                                <a target="_blank" href="https://github.com/VinayJv/login-flow-ecommerce" rel="noreferrer">Github</a>
+                            </div>
+                        </div>
+                    </div>
                     <div className={`project-cards`} ref={card1Ref} id="card1">
                         <div className="floating-project-info">
                             <div className="project-title-container">
@@ -65,19 +79,6 @@ export function Portfolio() {
                             <div className="project-links-container">
                                 <a target="_blank" href="https://pc-shop-vj.netlify.app/" rel="noreferrer">Live Code</a>
                                 <a target="_blank" href="https://github.com/VinayJv/project-1-neog" rel="noreferrer">Github</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`project-cards`} ref={card3Ref} id="card3">
-                        <div className="floating-project-info">
-                            <div className="project-title-container">
-                                <p className="project-title">MeetUp</p>
-                                <p className="arrow">{`➤`}</p>
-                            </div>
-                            <p className="project-info">An event manager.</p>
-                            <div className="project-links-container">
-                                <a target="_blank" href="https://meetup-vj.netlify.app/" rel="noreferrer">Live Code</a>
-                                <a target="_blank" href="https://github.com/VinayJv/coding-round-8" rel="noreferrer">Github</a>
                             </div>
                         </div>
                     </div>

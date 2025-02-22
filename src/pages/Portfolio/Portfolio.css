@@ -27,15 +27,15 @@
 }
 .project-cards:nth-child(1){
     background-size: cover;
-    background-image: url("./social.jpg");
+    background-image: url("./event.jpg");
 }
 .project-cards:nth-child(2){
     background-size: cover;
-    background-image: url("./pcshop.jpg");
+    background-image: url("./social.jpg");
 }
 .project-cards:nth-child(3){
     background-size: cover;
-    background-image: url("./event.jpg");
+    background-image: url("./pcshop.jpg");
 }
 .project-cards:hover .floating-project-info{
     backdrop-filter: blur(2px);

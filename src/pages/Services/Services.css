@@ -18,6 +18,17 @@
     animation: slide-from-left 1s ease forwards;
 }
 
+.introduction-header-highlight {
+    color: #5D87B4;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.lg-text {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
 .sm-text-additional {
     margin-top: 1rem;
     text-align: left;

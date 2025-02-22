@@ -1,10 +1,16 @@
 import "./Loader.css";
 
-export function Loader() {
-    return (<div className="loader-container">
-        <div className="inner-loader-container">
-            <p>VJ</p>
-            <div className="fullstop animated-dot"></div>
+export function Loader(){
+    return(
+        <div className="LoaderContainer">
+            <div className="LoaderInnerContainer1"></div>
+            <div className="LoaderInnerContainer2"></div>
+            <div className="LoaderInnerContainer3"></div>
+            <div className="TextContainer">
+                <p className="Text1">Developer.</p>
+                <p className="Text2">Coder.</p>
+                <p className="Text3">Gamer.</p>
+            </div>
         </div>
-    </div>)
+    )
 }
